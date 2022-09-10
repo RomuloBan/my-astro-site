@@ -1,3 +1,8 @@
+const links = ['twitter', 'instagram', 'google'];
 export function Links() {
- return <p>TODO: add links</p>;
+ return (
+   <div>
+   {links.map(l => <p>{l}</p>)}
+   </div>
+ )
 }
