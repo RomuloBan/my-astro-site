@@ -5,6 +5,7 @@ type Link = {
   url: string;
 };
 
+
 const LINKS: Link[] = [
   {
     label: 'Twitter',
@@ -21,5 +22,5 @@ export function Links() {
    <nav className={styles.links}>
      {LINKS.map(link => <a key={link.url} href={link.url} class={styles.link}>{link.label}</a>)}
    </nav>
- )
+ );
 }
