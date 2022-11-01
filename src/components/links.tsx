@@ -18,9 +18,9 @@ const LINKS: Link[] = [
 ];
 
 export function Links() {
- return (
-   <nav className={styles.links}>
-     {LINKS.map(link => <a key={link.url} href={link.url} class={styles.link}>{link.label}</a>)}
-   </nav>
- );
+  return (
+    <nav className={styles.links}>
+      {LINKS.map(link => <a key={link.url} href={link.url} class={styles.link}>{link.label}</a>)}
+    </nav>
+  );
 }
